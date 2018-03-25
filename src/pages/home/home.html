@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+       Fener 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item >
+    <span>{{isOn ? 'AÇIK' : 'KAPALI'}}</span>
+  </ion-item>
+
+ <ion-fab center middle >
+  <!-- 
+  <button ion-fab color="danger"(tap)="switchOn()"><ion-icon name="md-power"></ion-icon></button>
+    <button ion-fab color="danger"(tap)="switchOn()"><ion-icon name="md-eye-off"></ion-icon></button>
+  -->
+    <button ion-fab color="danger"(tap)="toggle()"><ion-icon name="md-power"></ion-icon></button>
+  </ion-fab>
+</ion-content>
